@@ -1,0 +1,35 @@
+div.gen-info {
+	border:6px solid red;
+	border-radius:0px 50px 0px 50px;
+	color:red;
+	text-align: center;
+	padding:10px;
+	font-size:20px;
+}
+h2.head {
+	color:red;
+	font-weight:bold;
+	font-size:40px;
+}
+span.link {
+	color:red;
+	text-decoration:underline;
+}
+span.break {
+	color:lightgray;
+	font-size:10px;
+}
+@keyframes emoji {
+	0% { transform: rotate(0deg) }
+	100% { transform: rotate(90deg) }
+}
+div#emoji {
+	animation: emoji 0s forwards;
+	animation-iteration-count: 1;
+}
+div.center {
+	text-align: center;
+}
+th.row {
+	border-bottom:3px solid red;
+}
