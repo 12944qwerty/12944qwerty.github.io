@@ -1,4 +1,4 @@
-div.gen-info {
+.gen-info {
 	border:6px solid red;
 	border-radius:0px 50px 0px 50px;
 	color:red;
@@ -6,16 +6,16 @@ div.gen-info {
 	padding:10px;
 	font-size:20px;
 }
-h2.head {
+.head {
 	color:red;
 	font-weight:bold;
 	font-size:40px;
 }
-span.link {
+.link {
 	color:red;
 	text-decoration:underline;
 }
-span.break {
+.break {
 	color:lightgray;
 	font-size:10px;
 }
@@ -23,13 +23,18 @@ span.break {
 	0% { transform: rotate(0deg) }
 	100% { transform: rotate(90deg) }
 }
-div#emoji {
+#emoji {
 	animation: emoji 0s forwards;
 	animation-iteration-count: 1;
 }
-div.center {
+.center {
 	text-align: center;
 }
-th.row {
+.row {
 	border-bottom:3px solid red;
+}
+body {
+	font-family:Comic Sans MS;
+	background-color:lightgray;
+	color:red;
 }
