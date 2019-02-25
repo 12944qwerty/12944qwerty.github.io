@@ -2,4 +2,5 @@
 my website
 
 ## Credits
-- [jammum](https://scratch.mit.edu/users/jammum) on Scratch
+- [jammum](https://scratch.mit.edu/users/jammum) on Scratch - Correct syntax
+- @jakel181 - CNAME
