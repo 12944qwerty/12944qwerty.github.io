@@ -1,4 +1,4 @@
-# [12944qwerty.github.io](https://12944qwerty.cf)
+# [12944qwerty.github.io](https://12944qwerty.github.io)
 my website
 
 ## Credits
