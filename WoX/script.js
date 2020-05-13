@@ -5,7 +5,7 @@
 			var message = document.getElementById("welcoming-message").value;
 			var link = document.getElementById("welcoming-link");
 			
-			var output = "javascript:(function(a){a.value=a.value.slice(0,a.selectionStart)+" + message.trim() +  "+a.value.slice(a.selectionEnd);})(document.activeElement);";
+			var output = "javascript:(function(a){a.value=a.value.slice(0,a.selectionStart)+'" + message.trim() +  "'+a.value.slice(a.selectionEnd);})(document.activeElement);";
 			
 			console.log(output)
 			
