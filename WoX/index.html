@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WoX for 12944qwerty</title>
+<script type="javascript">
+	function welcomingBookmark(){
+		var title = document.getElementById("welcoming-title").value;
+		var message = document.getElementById("welcoming-message").value;
+		var link = document.getElementById("welcoming-link");
+		
+		var output = "javascript:" +  encodeURIComponent("(function(a){" + a.value=a.value.slice(0,a.selectionStart) + message.trim() +  "+a.value.slice(a.selectionEnd);})(document.activeElement);");
+		
+		link.text = title;
+		link.href = output;
+	}
+</script>
+</head>
+<body>
+
+I haven't coded thiss page yet but.... ehh. I'll do it when i get a chance!
+
+<h1> Bookmarklets </h1>
+Just some quick and easy things you can use to make WoX efficient.
+Drag each link into the bookmark bar.
+<ul>
+<li><a href="javascript: (function() {    var unfollowButtons = $('button.cuddlePetButton');    var index = unfollowButtons.length - 1;    unfollow();    function unfollow() {        if (index >= 0) {            $(unfollowButtons[index--])                .click();            setTimeout(unfollow, 5);        }    }})();">Cuddle All Pets</a> - Go to someone's pets and click this bookmarklet. It will cuddle all of them!</li>
+<li>Welcoming Bookmarklet! - Just click the text box on the wall, then click this. Then send post!<b></b><textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button onclick="welcomingBookmark()">Generate!</button><br><a id="welcoming-link" href="">XD</a></li>
+</ul>
+
+</body>
+</html>
