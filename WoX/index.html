@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <title>WoX for 12944qwerty</title>
-<script type="javascript">
-	addEventListener("DOMContentLoaded", () => {
-    	document.getElementById("welcoming-btn").addEventListener("click", () => {
+<script defer>
+	console.log("DOM fire");
+    	document.getElementById("welcoming-btn").addEventListener("click", () => {console.log("click fire");
         	var title = document.getElementById("welcoming-title").value;
 			var message = document.getElementById("welcoming-message").value;
 			var link = document.getElementById("welcoming-link");
@@ -16,7 +16,6 @@
 			link.innerText = title;
 			link.href = output;
     	});
-	});
 		
 </script>
 </head>
