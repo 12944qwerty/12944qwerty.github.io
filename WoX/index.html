@@ -13,7 +13,7 @@ Just some quick and easy things you can use to make WoX efficient.
 Drag each link into the bookmark bar.
 <ul>
 <li><a href="javascript: (function() {    var unfollowButtons = $('button.cuddlePetButton');    var index = unfollowButtons.length - 1;    unfollow();    function unfollow() {        if (index >= 0) {            $(unfollowButtons[index--])                .click();            setTimeout(unfollow, 5);        }    }})();">Cuddle All Pets</a> - Go to someone's pets and click this bookmarklet. It will cuddle all of them!</li>
-<li>Welcoming Bookmarklet! - Just click the text box on the wall, then click this. Then send post!<textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button id="welcoming-btn">Generate!</button><br><a id="welcoming-link" href=""></a></li>
+<li>Welcoming Bookmarklet! - Just fill in the text below, and click the bookmarklet when on the user page. Vala!<textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button id="welcoming-btn">Generate!</button><br><a id="welcoming-link" href=""></a></li>
 <li><a href="javascript:(function(a){var text=prompt("Enter your text", "Text here");a.value=a.value.slice(0,a.selectionStart)+text.split("").reverse().join("").split(" ").reverse().join(" ") +a.value.slice(a.selectionEnd);})(document.activeElement);">Speak Backwards</a> - Type what you want to into the prompt and it should type it backwards where you want it to.
 </ul>
 
