@@ -7,3 +7,17 @@ document.getElementById("welcoming-btn").addEventListener("click", () => {
 	link.innerText = title;
 	link.href = output;
 });
+
+document.getElementById("rainbow-ify").addEventListener("click", () => {
+	var text = document.getElementById("rainbow-text").value;
+	var output = '<span class="username-popup profile-link color--awesome">';
+  for (var i=0; i<text.length; i++) {
+    output += '<span>';
+    output += text.charAt(i);
+    output += '</span>';
+    console.log(i);
+  };
+  output += '</span>';
+  console.log(text);
+  document.getElementById('rainbow-html').value = output;
+});
