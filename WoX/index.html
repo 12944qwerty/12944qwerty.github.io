@@ -4,7 +4,7 @@
 <title>WoX for 12944qwerty</title>
 <!-- <script src="script.js" defer></script> -->
 <script>
-  document.getElementById("welcoming-btn").addEventListener("click", () => {
+  function MakeWelcome() {
     var title = document.getElementById("welcoming-title").value;
     var message = document.getElementById("welcoming-message").value;
     var link = document.getElementById("welcoming-link");
@@ -14,7 +14,7 @@
     link.href = output;
   });
 
-  document.getElementById("rainbow-ify").addEventListener("click", () => {
+  function Rainbowify() {
     var text = document.getElementById("rainbow-text").value;
     var output = '<span class="username-popup profile-link color--awesome">';
     for (var i=0; i<text.length; i++) {
@@ -41,7 +41,7 @@ Just some quick and easy things you can use to make WoX efficient.
 Drag each link into the bookmark bar.
 <ul>
 <li><a href="javascript: (function() {    var unfollowButtons = $('button.cuddlePetButton');    var index = unfollowButtons.length - 1;    unfollow();    function unfollow() {        if (index >= 0) {            $(unfollowButtons[index--])                .click();            setTimeout(unfollow, 5);        }    }})();">Cuddle All Pets</a> - Go to someone's pets and click this bookmarklet. It will cuddle all of them!</li>
-<li>Welcoming Bookmarklet! - Just fill in the text below, and click the bookmarklet when on the user page. Vala!<textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button id="welcoming-btn">Generate!</button><br>Bookmarklet here: <a id="welcoming-link" href="">Welcome Users</a></li>
+<li>Welcoming Bookmarklet! - Just fill in the text below, and click the bookmarklet when on the user page. Vala!<textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button onClick="MakeWelcome()" id="welcoming-btn">Generate!</button><br>Bookmarklet here: <a id="welcoming-link" href=""></a></li>
 <li><a href="javascript:(function(a){var text=prompt("Enter your text", "Text here");a.value=a.value.slice(0,a.selectionStart)+text.split("").reverse().join("").split(" ").reverse().join(" ") +a.value.slice(a.selectionEnd);})(document.activeElement);">Speak Backwards</a> - Type what you want to into the prompt and it should type it backwards where you want it to.
 <li><a href="javascript:galleons = document.getElementsByClassName("js-user-money-galleons")[0].innerText;sickles = document.getElementsByClassName("js-user-money-sickles")[0].innerText;knuts = document.getElementsByClassName("js-user-money-knuts")[0].innerText;document.getElementById("deposit-button").click();document.getElementById("deposit-galleons").value = galleons;document.getElementById("deposit-sickles").value = sickles;document.getElementById("deposit-knuts").value = knuts;document.getElementsByClassName("swal2-confirm")[0].click();">Deposit All</a> - This one deposits all money you have in your pocket into the bank, assuming you're on the bank's page.
 </ul>
@@ -64,7 +64,7 @@ Scripts:
 
 <h2>Other Random Things for Efficiency</h2>
 <ul>
-<li><button id="rainbow-ify">Rainbowify</button> - Turn a string of text into rainbow.<br><textarea id="rainbow-text" style="width:45%" placeholder="Place text here"></textarea><textarea style="width:45%" id="rainbow-html" placeholder="Copy HTML syntax here. Click the Rainbowify Button above to convert text."></textarea></li>
+<li><button onClick="Rainbowify()" id="rainbow-ify">Rainbowify</button> - Turn a string of text into rainbow.<br><textarea id="rainbow-text" style="width:45%" placeholder="Place text here"></textarea><textarea style="width:45%" id="rainbow-html" placeholder="Copy HTML syntax here. Click the Rainbowify Button above to convert text."></textarea></li>
 </ul>
 
 
