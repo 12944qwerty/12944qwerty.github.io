@@ -1,72 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>WoX for 12944qwerty</title>
-<!-- <script src="script.js" defer></script> -->
-<script>
-  function MakeWelcome() {
-    var title = document.getElementById("welcoming-title").value;
-    var message = document.getElementById("welcoming-message").value;
-    var link = document.getElementById("welcoming-link");
-    var output = "javascript:(function(a){a.value=a.value.slice(0,a.selectionStart)+\"" + message.trim() +  "\"+a.value.slice(a.selectionEnd);document.querySelectorAll('[value="Send"]')[0].click();})(document.getElementById("post"));";
-
-    link.innerText = title;
-    link.href = output;
-  });
-
-  function Rainbowify() {
-    var text = document.getElementById("rainbow-text").value;
-    var output = '<span class="username-popup profile-link color--awesome">';
-    for (var i=0; i<text.length; i++) {
-      output += '<span>';
-      output += text.charAt(i);
-      output += '</span>';
-      console.log(i);
-    };
-    output += '</span>';
-    console.log(text);
-    document.getElementById('rainbow-html').value = output;
-  });
-</script>
-</head>
-<body>
-
-I haven't coded this page yet but.... ehh. I'll do it when i get a chance!
-  
-Have any ideas? Found a bug?
-Contact: <a href="mailto:qwerty12944qwerty@gmail.com">me here!</a> or DM me on discord: 12944qwerty#9317
-
-<h1> Bookmarklets </h1>
-Just some quick and easy things you can use to make WoX efficient.
-Drag each link into the bookmark bar.
-<ul>
-<li><a href="javascript: (function() {    var unfollowButtons = $('button.cuddlePetButton');    var index = unfollowButtons.length - 1;    unfollow();    function unfollow() {        if (index >= 0) {            $(unfollowButtons[index--])                .click();            setTimeout(unfollow, 5);        }    }})();">Cuddle All Pets</a> - Go to someone's pets and click this bookmarklet. It will cuddle all of them!</li>
-<li>Welcoming Bookmarklet! - Just fill in the text below, and click the bookmarklet when on the user page. Vala!<textarea placeholder="Enter Bookmark Title Here!" id="welcoming-title" style="width:90%"></textarea><br><textarea placeholder="Enter Welcoming Message Here!" id="welcoming-message" style="width:90%"></textarea><br><button onclick="MakeWelcome()" id="welcoming-btn">Generate!</button><br>Bookmarklet here: <a id="welcoming-link" href=""></a></li>
-<li><a href="javascript:(function(a){var text=prompt("Enter your text", "Text here");a.value=a.value.slice(0,a.selectionStart)+text.split("").reverse().join("").split(" ").reverse().join(" ") +a.value.slice(a.selectionEnd);})(document.activeElement);">Speak Backwards</a> - Type what you want to into the prompt and it should type it backwards where you want it to.
-<li><a href="javascript:galleons = document.getElementsByClassName("js-user-money-galleons")[0].innerText;sickles = document.getElementsByClassName("js-user-money-sickles")[0].innerText;knuts = document.getElementsByClassName("js-user-money-knuts")[0].innerText;document.getElementById("deposit-button").click();document.getElementById("deposit-galleons").value = galleons;document.getElementById("deposit-sickles").value = sickles;document.getElementById("deposit-knuts").value = knuts;document.getElementsByClassName("swal2-confirm")[0].click();">Deposit All</a> - This one deposits all money you have in your pocket into the bank, assuming you're on the bank's page.
-</ul>
-
-<h1> TamperMonkey </h1>
-Or, instead of using bookmarklets.
-<ol>
-<li>You can install <a href="https://www.tampermonkey.net/">TamperMonkey</a>.</li>
-<li>Click the extension on the top-right, and click Dashboard.</li>
-<li>Next, go and copy the contents.</li>
-<li>Create a userscript at the dashboard and replace the contents with the contents from the the link you want to use.</li>
-<li>Repeat for every script.</li>
-</ol>
-Scripts:
-<ul>
-<li><a href="https://gist.githubusercontent.com/12944qwerty/25d776dcbeb9212642c651a99cf2df31/raw/57527fb65baeaf332d7d4f08c0c5b023681c98d0/cuddle_all.js">Cuddle All Script</a></li>
-<li><a href="https://gist.githubusercontent.com/12944qwerty/00adb3ad03acfd8e2c11fc2cbb754ad5/raw/50f9a587df92d1b432568ec5e26a89613ded6b94/deposit_all.js">Deposit All Script</a></li>
-<li><a href="https://gist.githubusercontent.com/12944qwerty/2e8b2741b19e8eeff1628028a782e88a/raw/3873f089ed5ed26c06129cbdea8998cbda505324/topic_save.js">Topic Autosaver Script</a></li>
-</ul>
-
-<h2>Other Random Things for Efficiency</h2>
-<ul>
-<li><button onclick="Rainbowify()" id="rainbow-ify">Rainbowify</button> - Turn a string of text into rainbow.<br><textarea id="rainbow-text" style="width:45%" placeholder="Place text here"></textarea><textarea style="width:45%" id="rainbow-html" placeholder="Copy HTML syntax here. Click the Rainbowify Button above to convert text."></textarea></li>
-</ul>
-
-
-</body>
+<html>
+    <head>
+        <title>Redirecting...</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta http-equiv="Refresh" content = "3; URL=http://12944qwerty.github.io">
+        <link rel="icon" type="image/png" href="https://cdn2.scratch.mit.edu/get_image/user/12238030_60x60.png">
+    </head>
+    <body style="color:red;background-color:lightgray;font-family:Comic Sans MS">
+        <div class="center">
+            <h1>Redirecting</h1>
+            In 3 seconds, you will be redirected to <a href="WoX.12944qwerty.repl.co"><span class="link">my main page!</span></a> I've moved pages for WoX.<br/> ¯\_(ツ)_/¯<span class="break"><br/></span>
+            <img width="400" height="400" src="https://cdn2.scratch.mit.edu/get_image/user/12238030_60x60.png" alt="12944qwerty Logo">
+        </div>
+    </body>
 </html>
